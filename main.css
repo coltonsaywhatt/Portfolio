@@ -96,7 +96,7 @@ nav {
   flex-wrap: wrap;
   align-items: center;
   padding-bottom: 7rem;
-  background: #212121;
+  background: #333;
   position: relative;
 }
 
@@ -198,11 +198,7 @@ nav {
   color: #333333;
 }
 
-.footnote {
-  font-family: SF Pro Display,sans-serif;
-  font-size: 12px;
-  font-weight: 200;
-}
+
 
 .container-contact100 {
   width: 100%;
@@ -426,4 +422,168 @@ form.contact100-form.validate-form p {
 
 input:focus{
   outline: none;
+}
+
+/* ------------------------------ */
+
+section {
+  margin: 0px auto;
+  padding: 100px 0px;
+  max-width: 1000px;
+}
+
+.project-container {
+  list-style: none;
+  margin-bottom: 20px;
+  position: relative;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(12, 1fr);
+  -webkit-box-align: center;
+  align-items: center;
+  box-shadow: 0 10px 30px -15px #53385d;
+  background-color: #5a4f70;
+  padding: 20px;
+  border-radius: 15px;
+}
+
+.project-container .project-content {
+  position: relative;
+  grid-area: 1 / 1 / -1 / 7;
+}
+
+.project-container .project-overline {
+  margin: 10px 0px;
+  color: thistle;
+  font-family: monospace;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.project-container .project-title {
+  margin: 0px 0px 20px;
+  color: white;
+  font-size: clamp(24px, 5vw, 28px);
+}
+
+.project-title a {
+  position: relative;
+  z-index: 1;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.project-container .project-description {
+  box-shadow: 0 10px 30px -15px #53385d;
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  position: relative;
+  z-index: 2;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: #53385d;
+  color: white;
+  font-size: 15px;
+  font-family: 'SF Pro Display';
+}
+
+.project-container .project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+  margin: 25px 0px 10px;
+  padding: 0px;
+  list-style: none;
+  max-width: 90%;
+}
+
+.project-container .project-tech li {
+  margin: 0px 20px 5px 0px;
+  color: white;
+  font-family: monospace;
+  font-size: 12px;
+  white-space: nowrap;
+}
+
+.project-container .project-links {
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  position: relative;
+  margin-top: 10px;
+  margin-left: -10px;
+  color: white;
+}
+
+.project-container .project-links a {
+  display: flex;
+  -webkit-box-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+.project-tech-list {
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+}
+
+.project-container .project-image {
+  transition: all 0.25s cubic-bezier(0.645,0.045,0.355,1);
+  grid-area: 1 / 6 / -1 / -1;
+  position: relative;
+  z-index: 1;
+}
+
+.project-container .project-image a {
+  width: 100%;
+  height: 100%;
+  background-color: plum;
+  border-radius: 4px;
+  vertical-align: middle;
+}
+
+.projectImage-wrapper {
+  width: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.projectImage-wrapper img {
+  height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  display: block;
+  position: static;
+  border: 2px solid white;
+}
+
+.image-box {
+  opacity: 1;
+  transition: opacity 500ms linear 0s;
+  object-fit: cover;
+  max-width: 700px;
+  display: block;
+}
+
+.footnote {
+  background-color: #333;
+  font-family: SF Pro Display,sans-serif;
+  font-size: 12px;
+  font-weight: 200;
+  color: plum;
+  padding: 5px;
+}
+
+#projects h2 {
+  display: flex;
+  justify-content: center;
+  color: #4a3d57;
+  font-size: 50px;  
+	font-weight: 900;
+  font-family: 'SF Pro Display';
 }
