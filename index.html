@@ -3,22 +3,45 @@
   <head>
     <meta charset=UTF-8/>
     <meta name=viewport content="width=device-width,initial-scale=1"/>
-    <title>Portfolio</title>
-    <link href="main.css" rel="stylesheet">
+    <title>Ronald Portalatin Portfolio</title>
+    <link href="css/main.css" rel="stylesheet">
     <link href="http://fonts.cdnfonts.com/css/sf-pro-display" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2773454f23.js" crossorigin="anonymous"></script>
-
+    <script src="https://kit.fontawesome.com/2773454f23.js" crossorigin="anonymous"></script>    
   </head>
   <body>
-    <nav>
+
+    <div class="main">
+      <header>
+        <h3>RP</h3>
+        <div class="nav">
+          <ul>
+            <li><a href="" class="fa fa-home fa-lg" id="home"></a></li>
+            <li><a href="#about" class="fa fa-user fa-lg"></a></li>
+            <li><a href="#skills" class="fa fa-code fa-lg"></a></li>
+            <li><a href="#contact" class="fa fa-envelope fa-lg"></a></li>
+          </ul>
+        </div>
+        <div class="media">
+          <a href="mailto:ronaldportalatin@gmail.com"><i class="fa fa-paper-plane" target="_blank"></i></a>
+          <a href="https://www.linkedin.com/in/ronaldportalatinjr/" target="_blank"><i class="fa fa-twitter"></i></a>
+          <a href="https://www.linkedin.com/in/ronaldportalatinjr/" target="_blank"><i class="fa fa-linkedin"></i></a>
+          <a href="https://github.com/coltonsaywhatt" target="_blank"><i class="fa fa-github"></i></a>
+          <a href="https://codepen.io/coltonsaywhatt" target="_blank"><i class="fa fa-codepen"></i></a>
+          <a href="https://open.spotify.com/user/na5xwdu58242akvp9slcge9i1?si=dacc5beeb45d42d8" target="_blank"><i class="fa fa-spotify"></i></a>
+          <a href="https://www.twitch.tv/ghostephace" target="_blank"><i class="fa fa-twitch"></i></a>
+        </div>
+      </header>
+    </div>
+
+    <!-- <nav>
       <div class="nav-links">
         <a href="">Home</a>
-        <a href="">About</a>
-        <a href="">Skills</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Portfolio</a>
         <a href="#contact">Contact</a>
       </div>
-    </nav>
+    </nav> -->
     <div class="topContainer">
       <div class="top-wrapper">
         <div class="top-text-wrapper">
@@ -35,6 +58,85 @@
         </div>
       </div>
     </div>
+
+    <section id="about">
+      <div class="about-title">
+        <h2>About Me</h2>
+      </div>
+      <div class="about-container">
+
+      </div>
+    </section>
+
+    <section id="skills">
+      <div class="skill-title">
+        <h2>My Skills</h2>
+      </div>      
+      <div class="sec-skills">
+        <div class="sec-skills__showcase">
+          <div class="sec-skills__skill-orbit-path sec-skills--skill-orbit-path-rotate">   
+            <div class="sec-skills__skill-express sec-skills--skill-rotate">
+              <img src="https://www.vectorlogo.zone/logos/expressjs/expressjs-icon.svg" alt="express" class="skill">
+              <p>express</p>         
+            </div>
+            <div class="sec-skills__skill-heroku sec-skills--skill-rotate">
+              <img src="https://cdn-icons-png.flaticon.com/512/873/873120.png" alt="heroku" class="skill">
+              <p>Heroku</p>
+            </div>
+            <div class="sec-skills__skill-javascript sec-skills--skill-rotate">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968292.png" alt="javascript" class="skill">
+              <p>Javascript</p>
+            </div>
+            <div class="sec-skills__skill-jquery sec-skills--skill-rotate">
+              <img src="http://cdn.onlinewebfonts.com/svg/img_435950.png" alt="jquery" class="skill">
+              <p>Jquery</p>
+            </div>
+            <div class="sec-skills__skill-reactjs sec-skills--skill-rotate">
+              <img src="https://cdn-icons-png.flaticon.com/512/3334/3334886.png" alt="reactjs" class="skill">
+              <p>React</p>     
+            </div>
+            <div class="sec-skills__skill-git sec-skills--skill-rotate">
+              <img src="https://i.ibb.co/tc3tRsH/icons8-git-800.png" alt="git" class="skill">
+              <p>git</p>
+            </div>
+            <div class="sec-skills__skill-python sec-skills--skill-rotate">
+              <img src="https://cdn-icons-png.flaticon.com/512/5968/5968350.png" alt="python" class="skill">
+              <p>Python</p>
+            </div>
+            <div class="sec-skills__skill-mongodb sec-skills--skill-rotate">
+              <img src="https://i.ibb.co/cc5dnc1/icons8-mongodb-800.png" alt="mongodb" class="skill">
+              <p>MongoDB</p>
+            </div>
+            <div class="sec-skills__skill-bootstrap sec-skills--skill-rotate">
+              <img src=https://i.ibb.co/WkX7L9q/bootstrap-logo.png alt="bootstrap" class="skill">
+              <p>Bootstrap</p>
+            </div>
+            <div class="sec-skills__skill-css3 sec-skills--skill-rotate">
+              <img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" alt="css" class="skill">
+              <p>CSS</p>
+            </div>
+            <div class="sec-skills__skill-nodejs sec-skills--skill-rotate">
+              <img src="https://www.svgrepo.com/show/303266/nodejs-icon-logo.svg" alt="nodejs" class="skill">
+              <p>Node.js</p>
+            </div>
+            <div class="sec-skills__skill-postgresql sec-skills--skill-rotate">
+              <img src="https://www.vectorlogo.zone/logos/postgresql/postgresql-icon.svg" alt="PostgreSQL" class="skill">
+              <p>PostgreSQL</p>
+            </div>
+          </div>
+          <div class="sec-skills__skill-html5">
+            <img src=https://cdn-icons-png.flaticon.com/512/1051/1051277.png>
+          </div>
+        </div>
+      </div>
+
+      <div class="skill-container">
+        
+        <div class="skill-img">
+          <span class="content"></span>                  
+        </div>
+      </div>
+    </section>
 
     <section id="projects">
       <h2>Some Things I’ve Built</h2>      
@@ -124,12 +226,12 @@
                 </p>
               </div>
               <ul class="project-tech">
+                <li>Python</li>
+                <li>Django</li>
+                <li>PostgreSQL</li>
                 <li>HTML</li>
                 <li>CSS</li>
-                <li>JavaScript</li>
-                <li>MongoDB</li>
-                <li>Express</li>
-                <li>Node.JS</li>
+                <li>GIT</li>                
               </ul>
               <div class="project-links">
                 <a href="https://github.com/coltonsaywhatt/Tweepy" target="_blank"><i class="fa-brands fa-github"></i></a>
@@ -207,8 +309,7 @@
         </div>  
     </footer>
 
-
-    <script type="text/javascript" src="main.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>
 

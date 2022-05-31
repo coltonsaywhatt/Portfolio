@@ -2,9 +2,6 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
 body {
-  margin: 0;
-  font-weight: 400;
-  text-align: left;
   background-color: #775e8c;
   margin: 0;
   
@@ -26,7 +23,7 @@ nav {
   font-size: 15px;
   text-decoration: none;
   margin: 0 10px;
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
 }
 
 .nav-links > a:hover {
@@ -38,7 +35,7 @@ nav {
   margin: auto;
 }
 .top-wrapper {
-  margin-top: 9rem;
+  /* margin-top: 9rem; */
 }
 
 .image-wrapper > img {
@@ -51,7 +48,7 @@ nav {
 
 .top-text-wrapper > h1 {
   color: white;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   font-size: 4.4rem;
   line-height: 4.8rem;
   letter-spacing: .19rem;
@@ -60,7 +57,7 @@ nav {
 }
 
 .top-text-wrapper > h3 {
-  font-family: "SF Pro Display";
+  font-family: 'SF Pro Display';
   color: #d09db6;
   text-transform: uppercase;
   font-size: 1.1rem;
@@ -77,7 +74,7 @@ nav {
   display: inline-block;
   font-size: 15px;
   transform: translate(0px, 0px);
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
 }
 
 .top-text-wrapper p:last-of-type {
@@ -109,7 +106,7 @@ nav {
   color: #FFFFFF;
   cursor: pointer;
   display: inline-block;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   font-size: 16px;
   line-height: normal;
   margin: 0;
@@ -137,7 +134,7 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: #333333;
+  color: ;
 }
 
 .social-container {
@@ -194,7 +191,7 @@ nav {
 }
 
 .social-container h2 {
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   color: #333333;
 }
 
@@ -212,13 +209,14 @@ nav {
 
 .wrap-contact100 {
   width: 720px;
-  /* background: #fff; */
-  border-radius: 10px;
+  border-radius: 30px;
   overflow: hidden;
   display: flex;
   flex-wrap: wrap;
   /* justify-content: space-between; */
-  padding: 110px 130px 157px 148px;
+  padding: 70px 70px 70px 70px;
+  box-shadow: 0 10px 30px -15px #53385d;
+  background-color: #5a4f70;
 }
 
 .contact-pic > img {
@@ -231,12 +229,13 @@ nav {
 
 .contact100-form-title {
   display: block;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   font-size: 24px;
   color: #333333;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 10px;
+  font-weight: bold;
 }
 
 input.input100 {
@@ -274,7 +273,7 @@ textarea:focus{
   display: block;
   width: 100%;
   background: #e6e6e6;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   font-size: 15px;
   line-height: 1.5;
   color: #666666;
@@ -338,7 +337,7 @@ textarea:focus{
   height: 50px;
   border-radius: 25px;
   background: #846add;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   font-size: 15px;
   line-height: 1.5;
   color: #fff;
@@ -370,7 +369,7 @@ textarea:focus{
   transform: translateY(-50%);
   right: 8px;
   pointer-events: none;
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   color: #c80000;
   font-size: 13px;
   line-height: 1.4;
@@ -415,9 +414,10 @@ form.contact100-form.validate-form {
 }
 
 form.contact100-form.validate-form p {
-  font-family: SF Pro Display,sans-serif;
+  font-family: 'SF Pro Display';
   color: #333333;
   font-size: 14px;
+  font-weight: 500;
 }
 
 input:focus{
@@ -464,6 +464,7 @@ section {
   margin: 0px 0px 20px;
   color: white;
   font-size: clamp(24px, 5vw, 28px);
+  font-family: 'SF Pro Display';
 }
 
 .project-title a {
@@ -586,4 +587,259 @@ section {
   font-size: 50px;  
 	font-weight: 900;
   font-family: 'SF Pro Display';
+}
+
+.skill-container {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-img img {
+  height: 100px;
+}
+
+/* ----------------------- */
+
+
+.sec-skills {
+  height: 420px;
+  background-color: #5a4f70;
+  border-radius: 276px;
+  box-shadow: 0 10px 30px -15px #53385d;
+}
+.sec-skills__showcase {
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotateX(70deg);
+	transform-style: preserve-3d;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path {
+	position: relative;
+	width: calc(300px * 2.8);
+	height: calc(300px * 2.8);
+	border-radius: 100%;
+	transform-style: preserve-3d;
+	animation: spin-right 30s linear infinite;
+  color: white;
+  font-family: 'SF Pro Display';
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills--skill-rotate {
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	border-radius: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transform: rotateX(-95deg);
+	transform-style: preserve-3d;
+	animation: spin-left 30s linear infinite;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills--skill-rotate > svg {
+	transform: scale(3);
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-express {
+	bottom: 0;
+	left: 50%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-heroku {
+	bottom: 5%;
+	left: 22%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-javascript {
+	bottom: 25%;
+	left: 5%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-jquery {
+	bottom: 50%;
+	left: 0%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-reactjs {
+	top: 25%;
+	left: 5%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-bootstrap {
+	top: 5%;
+	left: 25%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-python {
+	top: 0;
+	left: 50%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-mongodb {
+	top: 5%;
+	right: 25%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-git {
+	top: 25%;
+	right: 5%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-css3 {
+	top: 50%;
+	right: 0%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-nodejs {
+	bottom: 25%;
+	right: 5%;
+  flex-direction: column;
+}
+.sec-skills__showcase .sec-skills__skill-orbit-path .sec-skills__skill-postgresql {
+	bottom: 5%;
+	right: 22%;
+  flex-direction: column;
+}
+
+.sec-skills__showcase .sec-skills__skill-html5 img {
+	height: 250px;
+  width: 300px;  
+}
+
+.sec-skills__showcase .sec-skills__skill-html5 {
+	position: absolute;
+	transform: rotateX(-70deg);
+}
+@keyframes spin-right {
+	0% {
+		transform: rotateZ(0);
+	}
+	100% {
+		transform: rotateZ(360deg);
+	}
+}
+@keyframes spin-left {
+	0% {
+		transform: rotateX(-90deg) rotateY(-360deg) rotateZ(0deg);
+	}
+	100% {
+		transform: rotateX(-90deg) rotateY(0deg) rotateZ(0deg);
+	}
+}
+
+.skill {
+	height: 60px;
+}
+
+.skill-title {
+  display: flex;
+  justify-content: center;
+}
+
+.skill-title h2 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'SF Pro Display';
+  color: #4a3d57;
+}
+
+.about-title {
+  display: flex;
+  justify-content: center;
+}
+
+.about-title h2 {
+  font-size: 50px;
+  font-weight: 900;
+  font-family: 'SF Pro Display';
+  color: #4a3d57;
+}
+
+
+
+
+
+header {
+  position: fixed;
+  margin: 0 auto;
+  padding: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #333333;
+  z-index: 1;
+}
+
+header h3 {
+  padding-top: 15px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-family: 'SF Pro Display';
+}
+
+.nav {
+  margin: 60px auto;
+  width: 60px;
+  height: 50vh;
+  line-height: 50px;
+}
+
+.nav ul {
+  list-style-type: none;
+  width: 60px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav li  {
+  text-decoration: none;
+  text-align: center;
+}
+
+.nav li a {
+  display: block;
+  padding: 15px 20px;
+  text-decoration: none;
+  color: darkgrey;
+}
+
+.nav li a:hover {
+  background-color: plum;
+  color: white;
+  cursor: pointer;
+}
+
+.nav li a:active {
+  background-color: #333333;
+  color: white;
+}
+
+.media {
+  width: 60px;
+  height: 130px;
+  margin-top: 200px;
+  position: relative;
+  display: block;
+}
+
+
+.media i {
+  display: block;
+  text-align: center;
+  color: grey;
+  margin-top: 9px; 
+  cursor: pointer;
+}
+.media a {
+  text-decoration: none;
+}
+
+.media i:hover {
+  color: plum;
+}
+
+.main {
+  overflow: hidden;
 }
