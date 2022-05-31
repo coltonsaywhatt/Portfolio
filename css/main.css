@@ -796,6 +796,7 @@ header h3 {
 .nav li  {
   text-decoration: none;
   text-align: center;
+  margin-top: 20px;
 }
 
 .nav li a {
