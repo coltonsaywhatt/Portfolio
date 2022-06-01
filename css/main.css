@@ -859,3 +859,67 @@ header h3 {
   display: flex;
   align-items: center;
 }
+
+/* ---------------- */
+
+#skills .cards-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  max-width: 121.1rem;
+  margin: 0 auto;
+}
+
+#skills .cards-wrapper .card {
+  width: 20rem;
+  height: 20rem;
+  border-radius: 3.8rem;
+  background: #5a4f70;
+  padding: 3.8rem 2rem 2.2rem;
+  box-shadow: 0 1.6rem 3.6remrgba(0,0,0,.2);
+  margin-bottom: 2.4rem;
+  cursor: pointer;
+}
+
+#skills .cards-wrapper .card i {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-bottom: 1.8rem;
+  font-size: 3rem;
+}
+
+#skills .cards-wrapper .card h6 {
+  font-family: SF Pro Display,sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8rem;
+  line-height: 2.1rem;
+  color: #fff;
+  margin-bottom: 0.8rem;
+}
+
+#skills .cards-wrapper .card p {
+  font-family: SF Pro Display,sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3rem;
+  line-height: 1.9rem;
+  color: #fff;
+}
+
+i.fa-solid.fa-lightbulb {
+  color: gold;
+}
+
+i.fa-solid.fa-brain {
+  color: plum;
+}
+
+i.fa-solid.fa-compass-drafting {
+  color: lightsteelblue;
+}
+
+.card {
+  margin: 0 10px;
+}
