@@ -1,33 +1,13 @@
 @import url('http://fonts.cdnfonts.com/css/sf-pro-display');
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #775e8c;
   margin: 0;
-  
-}
-
-nav {
-  opacity: 0.7;
-  position: fixed;
-  top: 0px; 
-  left: 0px;
-  width: 1905px;
-  background-color: #A59AB6;
-  padding: 15px;
-  z-index: 1;
-}
-
-.nav-links > a {
-  color: rgb(0, 0, 0);
-  font-size: 15px;
-  text-decoration: none;
-  margin: 0 10px;
-  font-family: 'SF Pro Display';
-}
-
-.nav-links > a:hover {
-  color: #d09db6;
 }
 
 .topContainer {
@@ -843,4 +823,39 @@ header h3 {
 
 .main {
   overflow: hidden;
+}
+
+.about-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.about-container p {
+  color: white;
+  font-family: 'SF Pro Display';
+  font-size: 15px;
+}
+
+.about-text p {
+  color: white;
+  font-family: 'SF Pro Display';
+  padding: 10px 20px;
+}
+
+.about-text {
+  background-color: #5a4f70;
+  box-shadow: 0 10px 30px -15px #53385d;
+  border-radius: 20px;
+  width: 500px;
+  margin: auto;
+}
+
+.about-picture img {
+  height: 340px;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
 }
